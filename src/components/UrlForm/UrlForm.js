@@ -21,7 +21,7 @@ function UrlForm() {
         placeholder='Title...'
         name='title'
         value={title}
-        // onChange={e => }
+        onChange={e => console.log()}
       />
 
       <input
@@ -29,7 +29,10 @@ function UrlForm() {
         placeholder='URL to Shorten...'
         name='title'
         value={title}
-        // onChange={e => }
+        onChange={e => {
+            console.log("e",e.target.value)
+            // setUrlToShorten(e.target.value)
+        }}
       />
 
       <button onClick={e => handleSubmit(e)}>
